@@ -5,8 +5,6 @@ function FirstFactorial(num) {
 	result *= count;
 	}
 	
-
-
   return result;
          
 };
