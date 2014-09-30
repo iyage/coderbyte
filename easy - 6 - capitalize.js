@@ -12,7 +12,6 @@ for(var i = 0; i < str.length; i++){
 	array.push(str.charAt(i));
 };
 
-
 for(var j = 0; j < array.length; j++){
 	if (array[0] != array[0].toUpperCase()){
 			array[0] = array[0].toUpperCase();
@@ -21,8 +20,8 @@ for(var j = 0; j < array.length; j++){
 		if(array[j+1] != array[j+1].toUpperCase()) {
 			array[j+1] = array[j+1].toUpperCase();
 		}
-		}
-}
+	}
+};
   
 str = array.join("");
 return str; 
