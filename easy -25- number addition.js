@@ -13,7 +13,6 @@ function NumberAddition(str){
 for(var i = 0; i < str.length; i++){
 	if(str[i].match(digits)){
 		number+= str[i];
-		console.log(number, i)
 		if(i == str.length - 1){
 		numbers.push(number);
 		number = "";
