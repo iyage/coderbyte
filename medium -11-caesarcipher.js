@@ -3,18 +3,14 @@ Have the function CaesarCipher(str,num) take the str parameter and perform a Cae
 */
 function CaesarCipher(str,num) { 
 
-var alphalow = ["a", "b", "c", "d", "e", "f", "g", "h", "i", 
-	"j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", 
-    "u", "v", "w", "x", "y", "z", "a", "b", "c", "d", "e", "f", "g", "h", "i", 
-	"j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", 
-    "u", "v", "w", "x", "y", "z"];
-var alphacap = alphalow.join("").toUpperCase().split('');
+var alphalow = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+var alphacap = 'ABCDEFGHIJKLMNOPQRSTUVQXYZABCDEFGHIJKLMNOPQRSTUVQXYZ';
 
 
 str = str.split('');
 
 for(var i = 0; i < str.length; i++){
-	if(str[i].match(/\w/)){
+	if(str[i].match(/\w/)){S
 		if(str[i] === str[i].toLowerCase()){
 			str[i] = alphalow[alphalow.indexOf(str[i]) + num];
 		}
@@ -26,3 +22,4 @@ for(var i = 0; i < str.length; i++){
 str = str.join("");
 return str;  
 }
+
